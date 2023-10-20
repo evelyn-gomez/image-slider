@@ -11,9 +11,13 @@
     "url": "git+https://github.com/evelyn-gomez/image-slider.git"
   },
   "author": "evelyn-g",
-  "license": "none", 
+  "license": "none",
   "bugs": {
     "url": "https://github.com/evelyn-gomez/image-slider/issues"
   },
-  "homepage": "https://github.com/evelyn-gomez/image-slider#readme"
+  "homepage": "https://github.com/evelyn-gomez/image-slider#readme",
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
 }
