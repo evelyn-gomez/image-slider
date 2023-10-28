@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://image-slider/./src/index.js?");
+eval("class ImageSlider {\n  constructor(frame, {images = []} = []){\n    this.frame = frame;  \n    this.images = images;\n  }\n}\n\nconst frame =  document.querySelector(\".frame\");\nconst imagesElem = Array.from(document.querySelector('.frame').children) \n\nconst imageSlider = new ImageSlider(frame, imagesElem); \nconsole.log(imageSlider);\n\n//# sourceURL=webpack://image-slider/./src/index.js?");
 
 /***/ })
 
