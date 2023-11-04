@@ -19,5 +19,11 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  rules: {},
+  rules: {
+    quotes: [
+      "error",
+      "double"
+    ],
+    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement",]
+  },
 };

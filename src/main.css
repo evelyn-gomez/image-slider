@@ -1,0 +1,66 @@
+@import "../node_modules/normalize.css/normalize.css"; 
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+.outer-frame{
+  display: grid;
+  justify-content: center;
+  grid-template-areas: 
+  "prev innerframe next";
+  position: relative;
+}
+
+.inner-frame{
+  grid-area: innerframe;
+}
+
+.prev, .next{
+  position: absolute;
+  align-self: center;
+}
+
+.prev:hover,.next:hover{
+  background-color: rgba(93, 92, 92, 0.7)
+}
+
+.prev {
+  grid-area: prev;
+}
+
+.next{
+  grid-area: next;
+  right: 0;
+}
+
+.slide{
+  display: grid;
+  grid-template-areas: 
+  "number"
+  "image"
+  "text";
+}
+.hide{
+  display: none;
+}
+
+.slide-number{
+  grid-area: number;
+  position: absolute;
+  top: 5px;
+  margin: 5px;
+}
+
+.slide-text{
+  grid-area: text;
+  position: absolute;
+  bottom: 5px;
+  margin: 5px;
+}
+@media only screen and (min-width:600px) {
+  img{
+    width: 450px;
+    height: 400px;
+  }
+}
