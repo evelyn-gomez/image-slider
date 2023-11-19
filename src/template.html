@@ -4,41 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/main.css"/>
-    <title><%=htmlWebpackPlugin.options.title %></title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
     <div class="container">
+      <div class="nav-frame">
         <div class="outer-frame">
-      <div class="prev">
-        <svg xmlns="http://www.w3.org/2000/svg" height="55" viewBox="0 -960 960 960" ><path fill="#ffffff" d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>
-      </div>
-      <div class="inner-frame">
-        <div class="slide current" id="1">
-          <div class="slide-number" >1/4</div>
-          <img src="../src/images/spring_sergey-shmidt-koy6FlCCy5s-unsplash.jpg" alt="field of yellow tulips">
-          <div class="slide-text">Spring</div>
+          <div class="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" height="55" viewBox="0 -960 960 960" ><path fill="#ffffff" d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>
+          </div>
+          <div class="inner-frame">
+          </div>
+          <div class="next">
+            <svg xmlns="http://www.w3.org/2000/svg" height="55"viewBox="0 -960 960 960" ><path fill="#ffffff" d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+          </div>
         </div>
-        <div class="slide hide" id="2">
-          <div class="slide-number">2/4</div>
-          <img src="../src/images/summer_mike-swigunski-ueBmz9K8zTg-unsplash.jpg" alt="palm trees by the beach">
-          <div class="slide-text">Summer</div>
+        <div class="nav-dots">
+          <div class="inactive-dot one">  
+          </div>
+          <div class="inactive-dot two">
+          </div>
+          <div class="inactive-dot three">
+          </div>
+          <div class="inactive-dot four">
+          </div>
         </div>
-        <div class="slide hide" id="3">
-          <div class="slide-number" >3/4</div>
-          <img src="../src/images/fall_johannes-plenio-RwHv7LgeC7s-unsplash.jpg" alt="autumn trees in the forest with sun peeking through">
-          <div class="slide-text">Fall</div>
-        </div>
-        <div class="slide hide" id="4">
-          <div class="slide-number" >4/4</div>
-          <img src="../src/images/winter_adam-chang-IWenq-4JHqo-unsplash.jpg" alt="lake surrounded by snow" >
-          <div class="slide-text">Winter</div>
-        </div>
-      </div>
-      <div class="next">
-        <svg xmlns="http://www.w3.org/2000/svg" height="55"viewBox="0 -960 960 960" ><path fill="#ffffff" d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
       </div>
     </div>
-    </div>
-  
   </body>
 </html>

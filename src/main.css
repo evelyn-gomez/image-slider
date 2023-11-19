@@ -4,13 +4,31 @@
   display: flex;
   justify-content: center;
 }
+.nav-frame{
+  display: grid;
+  grid-template-rows: 6fr .7fr;
+  grid-template-areas: 
+  "outer-frame"
+  "dots";
+}
+
 .outer-frame{
   display: grid;
+  grid-area: outer-frame;
   justify-content: center;
   grid-template-areas: 
   "prev innerframe next";
   position: relative;
 }
+
+
+.nav-dots {
+    display: flex;
+    grid-area: dots;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .inner-frame{
   grid-area: innerframe;
@@ -51,13 +69,31 @@
   top: 5px;
   margin: 5px;
 }
-
+img{
+  width: 200px;
+  height: 300px;
+}
 .slide-text{
   grid-area: text;
   position: absolute;
   bottom: 5px;
   margin: 5px;
 }
+
+.nav-dots > div{
+  display: flex;
+  width: 22px;
+  height: 22px;
+}
+
+.inactive-dot{
+  background-image: url(./images/radio_button_unchecked_FILL0_wght400_GRAD0_opsz24.svg);
+}
+.active-dot{
+  background-image: url(./images/radio_button_checked_FILL0_wght400_GRAD0_opsz24.svg);
+}
+
+
 @media only screen and (min-width:600px) {
   img{
     width: 450px;

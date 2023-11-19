@@ -20,10 +20,6 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
-    quotes: [
-      "error",
-      "double"
-    ],
     "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement",]
   },
 };
